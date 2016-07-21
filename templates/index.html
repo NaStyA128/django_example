@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start!!!</title>
+</head>
+<body>
+    <!--<p>{{ request.now }}</p>-->
+    <img src="{% static '1.jpg' %}">
+    {% for post in posts %}
+        <p>{{ post.title }}</p><br>
+        <p>{{ post.text }}</p><br>
+        <p>{{ post.pk }}</p><br>
+    {% endfor %}
+</body>
+</html>
